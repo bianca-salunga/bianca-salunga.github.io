@@ -18,15 +18,15 @@
 	 <br>
 	<center>
         <form name="login" style="color:white"> Username &nbsp;
-            <input type="text" name="userid" />&nbsp;&nbsp;&nbsp;&nbsp; Password &nbsp;&nbsp;
-            <input type="password" name="pswrd" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="username" />&nbsp;&nbsp;&nbsp;&nbsp; Password &nbsp;&nbsp;
+            <input type="password" name="password" />&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="button" onclick="check(this.form)" value="Login" /> </form>
 			</center>
     </div>
     <script language="javascript">
         function check(form) /*function to check userid & password*/ {
             /*the following code checkes whether the entered userid and password are matching*/
-            if (form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+            if (form.username.value == "myuserid" && form.password.value == "mypswrd") {
                 window.open('target.html') /*opens the target page while Id & password matches*/
             }
             else {
