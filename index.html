@@ -16,32 +16,5 @@
      		<center><p style="color:white; font-size: 30px">QA Test Login Page</p></center>
  		<div style="min-height: 10vh"></div>
 			</div>
-		<center>
-			<table width = "90%">
-				<tr>
-				<td align="center">
-				<p style="color:white"> Username: <input type="text" name = "username" id="username" maxlength="50" required> 
-					&nbsp; Password: <input type = "password" name = "password" id="password" required>
-			 		&nbsp; <input type="submit" value="Login" name = "login" id="login">
-			 	</p>
-			 	<p style="color:yellow" id="errormsg">
-		 		</p>
-	 			</td>
- 				</tr>
-				</table>
-				</center>
-			<div style="min-height: 35vh"></div>
-	<!-- Javascript -->
-    	<script language="javascript">
-        function check(form) /*to check username & password*/ {
-            /*the following code checks whether the entered username and password are matching*/
-            if (form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
-                window.open('target.html') /*opens the target page while Id & password matches*/
-            }
-            else {
-                alert("Error Password or Username") /*displays error message*/
-            }
-        }
-    </script>
 	</body>
 </html>
