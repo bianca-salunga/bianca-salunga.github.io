@@ -14,7 +14,22 @@
      		<div style="min-height: 20vh"></div>
      				
      		<center><p style="color:white; font-size: 30px">QA Test Login Page</p></center>
- 		<div style="min-height: 10vh"></div>
-			</div>
+	 <br>
+        <form name="login"> Username &nbsp;
+            <input type="text" name="userid" />&nbsp;&nbsp;&nbsp;&nbsp; Password &nbsp;&nbsp;
+            <input type="password" name="pswrd" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" onclick="check(this.form)" value="Login" /> </form>
+    </div>
+    <script language="javascript">
+        function check(form) /*function to check userid & password*/ {
+            /*the following code checkes whether the entered userid and password are matching*/
+            if (form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+                window.open('target.html') /*opens the target page while Id & password matches*/
+            }
+            else {
+                alert("Error Password or Username") /*displays error message*/
+            }
+        }
+    </script>
 	</body>
 </html>
