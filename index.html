@@ -14,7 +14,7 @@
 		<div class="bgimg" style="min-height: 100%">
 		<h1 style="text-align:center; font-size:20pt ; color:#FFFFFF";>QA Test Login Page</h1>
 	 <br>
-       
+       <center>
 	    <form method="GET" action="target.html" onsubmit="return checkForm(this);" style="color:white;">
 	    <input type="text" title="Enter your username" type="text" required pattern="\w+" id="username" name="username" placeholder="Username" /> 
             <input title="Password must contain at least 8 characters, including UPPER, lowercase and numbers" type="password"
@@ -22,6 +22,7 @@
                   this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
                   if(this.checkValidity()) form.pwd2.pattern = this.value;"> 
 			<input type="submit" value="Login"> </form>
+			</center>
     </div>
 	</body>
 </html>
