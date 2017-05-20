@@ -16,7 +16,7 @@
 	 <br>
        <center>
 	    <form method="GET" action="target.html" onsubmit="return checkForm(this);" style="color:white;">
-	    <input type="text" title="Enter your username" type="text" required pattern="\w+" id="username" name="username" placeholder="Username" /> 
+	    <input type="text" title="Please fill in this field." type="text" required pattern="\w+" id="username" name="username" placeholder="Username" /> 
             <input title="Password must contain at least 8 characters, including UPPER, lowercase and numbers" type="password"
                   required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="pwd1" id="password" placeholder="Password" onchange="
                   this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
