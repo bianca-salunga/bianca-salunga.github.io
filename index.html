@@ -17,11 +17,11 @@
      		<center><p style="color:white; font-size: 30px" id="mytitle">QA Test Login Page</p></center>
 	 <br>
 	<center>
-        <form name="login" style="color:white"> Username &nbsp;
-            <input type="text" id="username" />&nbsp;&nbsp;&nbsp;&nbsp; Password &nbsp;&nbsp;
-            <input type="password" id="password" />&nbsp;&nbsp;&nbsp;&nbsp;
+        <form name="login" style="color:white">
+	    <input type="text" id="username" name="username" placeholder="Username" /> 
+            <input type="password" id="password" name="password" placeholder="Password" />
             <input type="button" onclick="check(this.form)" value="Login" id="login"/> </form>
-			</center>
+	</center>
     </div>
     <script language="javascript">
         function check(form) /*function to check userid & password*/ {
